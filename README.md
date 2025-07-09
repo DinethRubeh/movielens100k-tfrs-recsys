@@ -7,18 +7,24 @@
 3. How to run the code and reproduce results.
     - **Data pre-processing pipeline**: `src.preprocess.py`
         - commands:
-            - `cd src`
-            - `python preprocess.py`
+            ```
+            cd src
+            python preprocess.py
+            ```
     
     - **Model training pipeline**: `src.train.py`
         - commands:
-            - `cd src`
-            - `python train.py`
+            ```
+            cd src
+            python train.py
+            ```
 
     - **Model inference (ranking logic) FastAPI service**: `src.app.py`
         - commands to run FastAPI server:
-            - `cd src`
-            - `fastapi run app.py --host 0.0.0.0 --port 8000`
+            ```
+            cd src
+            fastapi run app.py --host 0.0.0.0 --port 8000
+            ```
         - Endpoint: `http://localhost:8000/recommendation/ranked_recommendation`
         - Request type: POST
         - Request Body:

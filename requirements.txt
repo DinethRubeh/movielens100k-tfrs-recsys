@@ -1,0 +1,6 @@
+pandas
+numpy
+tensorflow_recommenders
+fastapi[standard]
+uvicorn
+python-dotenv
