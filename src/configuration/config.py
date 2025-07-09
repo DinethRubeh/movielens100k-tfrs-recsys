@@ -1,0 +1,20 @@
+RAW_DATA_PATH = './data/raw-dataset-movielens100k'
+PREPROCESSED_DATA_PATH = './data/feature_store'
+
+USER_DATA_PATH = f'{PREPROCESSED_DATA_PATH}/users.csv'
+ITEM_DATA_PATH = f'{PREPROCESSED_DATA_PATH}/movies.csv'
+RATINGS_DATA_PATH = f'{PREPROCESSED_DATA_PATH}/ratings.csv'
+
+MODEL_PATH = './checkpoints/tfrs-ranking-with-sf'
+
+TRAIN_SIZE = 80_000
+TEST_SIZE = 20_000
+FULL_DATASET_SIZE = 100_000
+TRAIN_BATCH = 2048 # 8192
+TEST_BATCH = 4096
+LR = 0.05
+EPOCHS = 15
+
+DEFAULT_GENDER = "M",
+DEFAULT_OCCUPATION = "other",
+DEFAULT_GENRE = "unknown"
