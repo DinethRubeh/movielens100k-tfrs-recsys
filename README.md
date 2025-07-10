@@ -69,8 +69,16 @@ Recommendation inference endpoint is exposed via a FastAPI REST service.
 
 ## 2. Model Choice Rationale
 
-## 3. How to run the code and reproduce results.
+- Enables Hybrid Modeling: Combines collaborative filtering (user-item interactions) with content-based filtering (side feature metadata)
+- Side Feature Support: Easy inclusion of user and movie metadata as embeddings.
+- Deep learning models capture non-linear relationships from user/item interactions, unlike Factorization Machine based hybrid models which only capture linear relationships.
+- Flexibilty to extend to other tasks such as retrieval.
+- Production-ready model serving
+
+
+## 3. How to run the code and reproduce results
   - **Install dependencies**
+      - python version: 3.11
       - `pip install -r requirements.txt`
 
   - **Data pre-processing pipeline**: `src.preprocess.py`
