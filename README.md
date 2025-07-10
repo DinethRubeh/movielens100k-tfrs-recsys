@@ -70,6 +70,9 @@ Recommendation inference endpoint is exposed via a FastAPI REST service.
 ## 2. Model Choice Rationale
 
 ## 3. How to run the code and reproduce results.
+  - **Install dependencies**
+      - `pip install -r requirements.txt`
+
   - **Data pre-processing pipeline**: `src.preprocess.py`
       - commands:
           ```
