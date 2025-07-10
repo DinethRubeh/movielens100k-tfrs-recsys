@@ -8,7 +8,7 @@ The designed recommender system generates ***ranked movie recommendations*** for
 2. **Model Training Pipeline**
 3. **Model Inference (Ranking Logic) Pipeline**
 
-<img src="data/artifacts/Movie_Recommendations_TFRS_Movielens_100k.jpg" alt="Pipeline Architecture" width="500"/>
+<img src="data/artifacts/Movie_Recommendations_TFRS_Movielens_100k.jpg" alt="Pipeline Architecture" width="800"/>
 
 ---
 
