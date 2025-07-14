@@ -78,21 +78,25 @@ Recommendation inference endpoint is exposed via a FastAPI REST service.
 
 ## 3. How to run the code and reproduce results
   - **Install dependencies**
-      - python version: 3.11
-      - `pip install -r requirements.txt`
+      - Install uv (if not installed)
+        - MacOS: `curl -Ls https://astral.sh/uv/install.sh | sh` or `brew install uv`
+        - Windows: `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
+      - Create virtual env and install dependencies
+        - `uv venv` (create virtual env)
+        - `uv sync` (install dependencies)
 
   - **Data pre-processing pipeline**: `src.preprocess.py`
       - commands:
           ```
           cd src
-          python preprocess.py
+          uv run python preprocess.py
           ```
   
   - **Model training pipeline**: `src.train.py`
       - commands:
           ```
           cd src
-          python train.py
+          uv run python train.py
           ```
 
   - **Model inference (ranking logic) FastAPI service**: `src.app.py`
